@@ -3,29 +3,33 @@ import { StyleSheet, View, Text, ScrollView, Platform } from "react-native";
 
 const GameRules = () => {
   return (
-    <ScrollView style={styles.container}>
-      <Text style={styles.title}>Game Rules</Text>
-      <Text style={styles.ruleText}>
-        It Takes Four is a two-player connection game in which the players take
-        turns dropping colored discs from the top into a seven-column, six-row
-        vertically suspended grid. The pieces fall straight down, occupying the
-        next available space within the column. The objective of the game is to
-        be the first to form a horizontal, vertical, or diagonal line of four of
-        one's own discs.
-      </Text>
-      <Text style={styles.subtitle}>Computer vs Player Mode</Text>
-      <Text style={styles.ruleText}>
-        In single-player mode, you'll play against the computer AI. You'll play
-        as red discs, and the computer will play as yellow discs. The computer
-        will analyze the board and make strategic moves to either win or block
-        your winning moves. Take your turn by tapping the column where you want
-        to drop your disc.
-      </Text>
-    </ScrollView>
+    <View style={styles.container}>
+      <ScrollView style={styles.parent}>
+        <Text style={styles.title}>Game Rules</Text>
+        <Text style={styles.ruleText}>
+          It Takes Four is a two-player connection game in which the players
+          take turns dropping colored discs from the top into a seven-column,
+          six-row vertically suspended grid. The pieces fall straight down,
+          occupying the next available space within the column. The objective of
+          the game is to be the first to form a horizontal, vertical, or
+          diagonal line of four of one's own discs.
+        </Text>
+        <Text style={styles.subtitle}>Computer vs Player Mode</Text>
+        <Text style={styles.ruleText}>
+          In single-player mode, you'll play against the computer AI. You'll
+          play as red discs, and the computer will play as yellow discs. The
+          computer will analyze the board and make strategic moves to either win
+          or block your winning moves. Take your turn by tapping the column
+          where you want to drop your disc.
+        </Text>
+        
+      </ScrollView>
+    </View>
   );
 };
 
 const styles = StyleSheet.create({
+
   container: {
     flex: 1,
     padding: 20,
@@ -40,6 +44,9 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.25,
     shadowRadius: 3.84,
     elevation: 5,
+    height: "auto",
+    justifyContent: "center",
+    alignSelf: "center",
   },
   title: {
     fontSize: 24,
@@ -59,7 +66,7 @@ const styles = StyleSheet.create({
     fontSize: 16,
     color: "#34495E",
     lineHeight: 24,
-    marginBottom: 10,
+    marginBottom: 20,
     textAlign: "justify",
   },
 });

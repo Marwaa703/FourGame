@@ -178,9 +178,8 @@ const styles = StyleSheet.create({
   },
   header: {
     width: "100%",
-    maxWidth: "100%",
     flexDirection: "row",
-    justifyContent: "space-between",
+    justifyContent: "space-around",
     marginVertical: 40,
     paddingHorizontal: 10,
   },

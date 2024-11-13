@@ -3,7 +3,6 @@
     "name": "Four",
     "slug": "Four",
     "version": "1.0.0",
-    "sdkVersion": "48.0.0",
     "orientation": "portrait",
     "icon": "./assets/logo.png",
     "userInterfaceStyle": "light",
@@ -29,6 +28,9 @@
       "eas": {
         "projectId": "084ee4e5-713b-4b3a-b8b0-d791c2f1e35d"
       }
-    }
+    },
+    "plugins": [
+      "expo-router"
+    ]
   }
 }

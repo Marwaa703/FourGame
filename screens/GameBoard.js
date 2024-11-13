@@ -122,7 +122,7 @@ const GameBoard = () => {
 
   const handleReset = () => {
     setModalVisible(false);
-    resetGame();
+    // resetGame();
   };
 
   return (

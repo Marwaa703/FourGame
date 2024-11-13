@@ -176,8 +176,7 @@ const styles = StyleSheet.create({
     width: "100%",
     flexDirection: "row",
     justifyContent: "space-between",
-    // paddingHorizontal: 20,
-    marginVertical: 60,
+    marginVertical: 40,
   },
   currentPlayerContainer: {
     backgroundColor: colors.text,

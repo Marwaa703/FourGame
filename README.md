@@ -62,6 +62,11 @@ To run the project locally, follow these steps:
 
 If you'd like to contribute to this project, feel free to fork the repository and create a pull request. For any issues or suggestions, open an issue in the repository.
 
+## Download 
+
+You can Download the Android APK version from here: [It Takes Four](https://expo.dev/artifacts/eas/t5KFypdSRfXGWmNxUBYkqS.apk)
+
+
 ## License
 
 This project is licensed under the MIT License.

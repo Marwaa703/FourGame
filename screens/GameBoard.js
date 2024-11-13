@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { View, Text, StyleSheet, Alert } from "react-native";
+import { View, Text, StyleSheet, Alert, Dimensions } from "react-native";
 import { colors } from "../constants/colors";
 import { checkWinner, computerMove } from "../utils/gameLogic/gameLogic";
 import { useGame } from "../context/GameContext";
@@ -125,6 +125,10 @@ const GameBoard = () => {
     // resetGame();
   };
 
+  const { width } = Dimensions.get("window");
+  const headerStyle =
+    width < 350 ? { paddingHorizontal: 15 } : { paddingHorizontal: 30 };
+
   return (
     <View style={styles.container}>
       <GameOverModal
@@ -132,7 +136,7 @@ const GameBoard = () => {
         winner={winner}
         resetGame={handleReset}
       />
-      <View style={styles.header}>
+      <View style={[styles.header, headerStyle]}>
         <SecondaryButton text="Restart" onClick={resetGame} />
         <Logo />
         <SecondaryButton text="Menu" onClick={handleBackToMenu} />
@@ -169,14 +173,16 @@ const GameBoard = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    // justifyContent: "center",
     alignItems: "center",
+    overflow: "hidden",
   },
   header: {
     width: "100%",
+    maxWidth: "100%",
     flexDirection: "row",
     justifyContent: "space-between",
     marginVertical: 40,
+    paddingHorizontal: 10,
   },
   currentPlayerContainer: {
     backgroundColor: colors.text,

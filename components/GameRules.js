@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, View, Text, ScrollView } from "react-native";
+import { StyleSheet, View, Text, ScrollView, Platform } from "react-native";
 
 const GameRules = () => {
   return (
@@ -13,7 +13,6 @@ const GameRules = () => {
         be the first to form a horizontal, vertical, or diagonal line of four of
         one's own discs.
       </Text>
-
       <Text style={styles.subtitle}>Computer vs Player Mode</Text>
       <Text style={styles.ruleText}>
         In single-player mode, you'll play against the computer AI. You'll play
@@ -28,6 +27,7 @@ const GameRules = () => {
 
 const styles = StyleSheet.create({
   container: {
+    flex: 1,
     padding: 20,
     backgroundColor: "#f5f5f5",
     borderRadius: 10,

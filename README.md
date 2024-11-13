@@ -60,7 +60,7 @@ To run the project locally, follow these steps:
 
 ## Screenshots
 
-![Screenshot 1]([https://it-takes-four-app.com/screenshots/1.png](https://github.com/Marwaa703/my-portfolio/blob/main/public/projects/four/1.jpg))
+![Screenshot 1]((https://github.com/Marwaa703/my-portfolio/blob/main/public/projects/four/1.jpg))
 ![Screenshot 2](https://it-takes-four-app.com/screenshots/2.png)
 ![Screenshot 3](https://it-takes-four-app.com/screenshots/3.png)
 

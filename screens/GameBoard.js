@@ -188,7 +188,6 @@ const styles = StyleSheet.create({
     justifyContent: "space-evenly",
     marginVertical: 70,
     paddingHorizontal: 10,
-  
   },
   currentPlayerContainer: {
     backgroundColor: colors.text,

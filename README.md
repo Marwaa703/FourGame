@@ -66,4 +66,7 @@ If you'd like to contribute to this project, feel free to fork the repository an
 
 You can Download the Android APK version from here: [It Takes Four](https://expo.dev/artifacts/eas/6V2Cb2SfzxHm3wFxxpPeKs.apk)
 
+## Demo 
+You can see a Demo for this App here: [It Takes Two Demo](https://youtube.com/shorts/I6N23_1Jh0Y?si=DNNSo8LseidhuIHc)
+
 

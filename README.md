@@ -58,12 +58,6 @@ To run the project locally, follow these steps:
 
 4. Open the app on your mobile device or emulator using the Expo Go app.
 
-## Screenshots
-
-![Screenshot 1]((https://github.com/Marwaa703/my-portfolio/blob/main/public/projects/four/1.jpg))
-![Screenshot 2](https://it-takes-four-app.com/screenshots/2.png)
-![Screenshot 3](https://it-takes-four-app.com/screenshots/3.png)
-
 ## Contributing
 
 If you'd like to contribute to this project, feel free to fork the repository and create a pull request. For any issues or suggestions, open an issue in the repository.

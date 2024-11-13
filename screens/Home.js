@@ -56,18 +56,21 @@ export default function Home() {
             onClick={() => setShowRules(true)}
           />
         </View>
-      ) : gameMode === "difficultySelection" && (
-        <View style={styles.menu}>
-          <Text style={styles.title}>Select Difficulty</Text>
-          {Object.values(DIFFICULTY_LEVELS).map((level) => (
-            <MainButton
-              key={level.name}
-              text={level.name}
-              bgColor={colors.p2}
-              onClick={() => handleDifficultySelection(level)}
-            />
-          ))}
-        </View>
+      ) : (
+        gameMode === "difficultySelection" && (
+          <View style={styles.menu}>
+            <Text style={styles.title}>Player VS Computer</Text>
+            <Text style={styles.title}>Select Difficulty</Text>
+            {Object.values(DIFFICULTY_LEVELS).map((level) => (
+              <MainButton
+                key={level.name}
+                text={level.name}
+                bgColor={colors.p2}
+                onClick={() => handleDifficultySelection(level)}
+              />
+            ))}
+          </View>
+        )
       )}
     </View>
   );

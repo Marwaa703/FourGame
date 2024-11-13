@@ -7,9 +7,7 @@
     "icon": "./assets/logo.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/logo.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#8a4af3"
+      "backgroundColor": "#7F00FF"
     },
     "cli": {
       "appVersionSource": "package"

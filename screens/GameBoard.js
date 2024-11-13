@@ -118,16 +118,22 @@ const GameBoard = () => {
     setWinner(winner);
     setIsGameOver(true);
     setModalVisible(true);
+    if (winner === "draw") {
+      setCurrentPlayer("Player 1");
+      setIsGameOver(false);
+    }
   };
 
   const handleReset = () => {
     setModalVisible(false);
-    // resetGame();
+    if (winner !== "draw") {
+      resetGame();
+    }
   };
 
   const { width } = Dimensions.get("window");
   const headerStyle =
-    width < 350 ? { paddingHorizontal: 15 } : { paddingHorizontal: 30 };
+    width < 390 ? { paddingHorizontal: 15 } : { paddingHorizontal: 30 };
 
   return (
     <View style={styles.container}>
@@ -179,15 +185,16 @@ const styles = StyleSheet.create({
   header: {
     width: "100%",
     flexDirection: "row",
-    justifyContent: "space-around",
-    marginVertical: 40,
+    justifyContent: "space-evenly",
+    marginVertical: 70,
     paddingHorizontal: 10,
+  
   },
   currentPlayerContainer: {
     backgroundColor: colors.text,
     borderRadius: 20,
     padding: 20,
-    marginBottom: 30,
+    marginBottom: 50,
     textAlign: "center",
   },
   currentPlayer: {

@@ -1,7 +1,8 @@
 {
   "expo": {
-    "name": "Four",
+    "name": "It Takes Four",
     "slug": "Four",
+    "sdkVersion": "49.0.0",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/logo.png",
@@ -13,7 +14,8 @@
       "appVersionSource": "package"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.marwaa.Four"
     },
     "android": {
       "adaptiveIcon": {
@@ -30,6 +32,8 @@
         "projectId": "084ee4e5-713b-4b3a-b8b0-d791c2f1e35d"
       }
     },
-    "plugins": ["expo-router"]
+    "plugins": [
+      "expo-router"
+    ]
   }
 }

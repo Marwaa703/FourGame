@@ -3,7 +3,7 @@ import { StyleSheet, View,Text } from 'react-native';
 
 const GameRules = () => {
     return (
-        <View style={styles.container}>
+        <ScrollView style={styles.container}>
             <Text style={styles.title}>Game Rules</Text>
             <Text style={styles.ruleText}>
                 It Takes Four is a two-player connection game in which the players take turns dropping colored discs from the top into a seven-column,
@@ -18,7 +18,7 @@ const GameRules = () => {
                 The computer will analyze the board and make strategic moves to either win or block your winning moves. Take your turn by tapping
                 the column where you want to drop your disc.
             </Text>
-        </View>
+        </ScrollView>
     );
 }
 

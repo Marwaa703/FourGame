@@ -1,5 +1,0 @@
-rootProject.name = 'Four'
-include ':app'
-
-include ':react-native-splash-screen'
-project(':react-native-splash-screen').projectDir = new File(rootDir, '../node_modules/react-native-splash-screen/android')
